@@ -142,6 +142,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appse.secrets.config" />
+    <Content Include="conn.secrets.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Web.Debug.config">

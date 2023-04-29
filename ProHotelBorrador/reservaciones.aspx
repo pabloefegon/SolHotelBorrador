@@ -26,7 +26,7 @@
     <form id="form1" runat="server">
 
         <%-- header --%>
-        <header style="border-bottom: 4px solid #05386B">
+        <header>
 
             <div id="nombre">
                 <h1><a href="index.aspx">Fabian Bed & Breakfast</a></h1>
