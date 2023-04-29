@@ -1,0 +1,1133 @@
+﻿/* ~~~~~~~~~~~~ estilos comunes entre paginas ~~~~~~~~~~~~~~ */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #5cdb95;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.boton-general-asp {
+    border-radius: 26px;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    background: rgba(248, 244, 29, 0.692);
+    color: black;
+    margin: 0 auto;
+}
+
+
+.tono-background {
+    background: rgba(47, 49, 49, 0.70);
+}
+
+
+.seccion-notificacion {
+    width: 90%;
+    min-height: 50px;
+    background-color: #e17055;
+    position: fixed;
+    right: -100%;
+    top: 15%;
+    border-radius: 4px;
+    border-left: 6px solid #d63031;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+/*este estilo se aplica solo para las notificaciones no relacionadas con errores*/
+.seccion-notificacion-exito {
+    background-color: #74b9ff;
+    border-left: 6px solid #81ecec;
+}
+
+
+.contenido-notificacion {
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 3px 0;
+
+}
+
+.texto-notificacion {
+    text-align:center;
+    padding: 10px 0;
+    width: 70%;
+}
+
+.area-boton-cerrar-notificacion {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.boton-cerrar-notificacion {
+    cursor: pointer;
+    color: white;
+}
+
+
+/* estilos comunes: titulo de pagina */
+.pagina-titulo {
+    background: white;
+    text-align: center;
+}
+
+
+    .pagina-titulo h1 {
+        font-size: 30px;
+        letter-spacing: 1.4px;
+        word-spacing: 3.6px;
+        background: white;
+        color: black;
+    }
+
+
+    .pagina-titulo span {
+        text-decoration: underline dotted rgb(225, 33, 33, 0.40);
+    }
+
+
+    .pagina-titulo-pequeno {
+        background: white;
+        text-align: left;
+    }
+
+    .pagina-titulo-pequeno h4 {
+        letter-spacing: 1.4px;
+        word-spacing: 3.6px;
+        color: black;
+        margin: 5px auto;
+    }
+
+/* estilos comunes: formularios */
+
+.contenedor-area-formulario {
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-formulario {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+}
+
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+    .formulario span, .formulario label {
+        text-align: center;
+    }
+
+
+    .formulario input[type=text], .formulario textarea {
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .formulario input[type=date] {
+        border-radius: 0px;
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+    .formulario input[type=password] {
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+
+    .formulario p {
+        width: 80%;
+        text-align: justify;
+        margin: 10px auto;
+    }
+
+
+/* estilos comunes: caja con instrucciones */
+
+.instrucciones {
+    background: white;
+}
+
+    .instrucciones h3 {
+        text-align: left;
+    }
+
+
+    .instrucciones p {
+        text-align: justify;
+    }
+
+    .instrucciones span {
+        font-weight: 700;
+    }
+
+
+.resaltado-instrucciones {
+    font-weight: 700;
+    color: red;
+}
+
+
+.instrucciones-parrafo {
+    display: none;
+    color: #edf5e1;
+}
+
+.caja-boton-instrucciones {
+    width: 100%;
+    text-align: center;
+}
+
+.boton-html-instrucciones {
+    background: #0396d7;
+    margin: 15px auto;
+}
+
+
+
+/* estilos comunes: header */
+
+header {
+    background: #8ee4af;
+    border-bottom: #05386B 4px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    header #nombre {
+    }
+
+
+        header #nombre h1 a {
+            font-size: 40px;
+            font-family: 'Kaushan Script', cursive;
+            cursor: pointer;
+            color: #05386b;
+        }
+
+
+    header a {
+        color: #05386B;
+        text-decoration: none;
+        font-family: "Arial Black", Gadget, sans-serif;
+        font-size: 16px;
+        letter-spacing: -0.8px;
+        word-spacing: 1.0px;
+    }
+
+#logotipo {
+    margin-left: 1%;
+    height: 100px;
+}
+
+    #logotipo img {
+        height: 100%;
+    }
+
+
+header li {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+
+header nav {
+    margin-top: 50px;
+}
+
+
+header .pagina-actual a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+header a:hover {
+    color: #edf5e1;
+}
+
+.pagina-privada a:hover {
+    color: red;
+}
+
+
+.boton-menu {
+    color: red;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* estilos comunes: linea divisoria segmentos */
+
+.linea-divisoria {
+    height: 7px;
+    background-color: #05386B;
+}
+
+/* estilos comunes: footer */
+
+footer {
+    background: #8ee4af;
+}
+
+    footer #datos-logos {
+        float: left;
+        margin-top: 2%;
+        width: 45%;
+    }
+
+.datos-contacto {
+    margin: 3%;
+    padding: 0;
+    color: #05386B;
+}
+
+.datos-contacto {
+    text-align: left;
+}
+
+    .datos-contacto span {
+        color: rgba(120, 120, 115, 0.99);
+        font-weight: 700;
+    }
+
+
+#datos-horario {
+    display: flex;
+    margin: 3%;
+}
+
+    #datos-horario #datos-horario-titulo {
+        width: auto;
+    }
+
+        #datos-horario #datos-horario-titulo span {
+            color: rgba(120, 120, 115, 0.99);
+            font-weight: 700;
+        }
+
+    #datos-horario #datos-horario-horas {
+        width: auto;
+        text-align: left;
+        margin: 0 2%;
+    }
+
+        #datos-horario #datos-horario-horas span {
+            font-weight: 700;
+        }
+
+        #datos-horario #datos-horario-horas ul {
+            list-style: none;
+        }
+
+
+footer #ubicacion {
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 45%;
+    text-align: center;
+    overflow: auto;
+    background: white;
+    border-radius: 27px;
+}
+
+#ubicacion iframe {
+    height: 250px;
+    width: 400px;
+    margin: 3%;
+}
+
+#logos {
+    margin: auto;
+    padding: auto;
+    margin: 3%;
+}
+
+    #logos ul {
+        text-align: center;
+    }
+
+#datos-logos #logos li {
+    display: inline;
+    padding: 0 5% 0 5%;
+}
+
+#logos li a {
+    font-size: 40px;
+    color: #05386B;
+}
+
+    #logos li a:hover {
+        color: #edf5e1;
+    }
+
+
+#seccion-autoria {
+    float: left;
+    background: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+#seccion-autoria a {
+    text-decoration: none;
+}
+
+
+
+/* ~~~~~~~~~~~~ estilos pagina index  ~~~~~~~~~~~~~~ */
+
+#paisaje-scroll-inicio {
+    min-height: 500px;
+    background: url('/pics/kh-i-d-ng-iaR94XeBLN4-unsplash.jpg');
+    background-position: 50% 45%;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+#paisaje-scroll-inicio-foto {
+    margin-top: 110px;
+    font-size: 70px;
+    font-family: 'Rock Salt', cursive;
+    color: #edf5e1;
+}
+
+#paisaje-scroll-inicio img {
+    margin-top: 70px;
+    color: white;
+}
+
+#paisaje-scroll-inicio h1 {
+    font-size: 40px;
+    margin-top: 0px;
+    color: white;
+}
+
+#mensaje {
+    background: #05386B;
+    text-align: center;
+}
+
+    #mensaje h3 {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    #mensaje #mensaje-texto {
+        font-family: 'Lexend', sans-serif;
+        font-size: 30px;
+        color: #edf5e1;
+    }
+
+#enlace-mensaje-texto {
+    color: #edf5e1;
+    text-decoration: none;
+}
+
+
+#enlace-mensaje-texto:hover {
+    color: yellow;
+}
+
+
+
+#preview-partes {
+    background-image: url('/pics/stephen-monroe-yg8Cz-i5U30-unsplash.jpg');
+    background-size: cover;
+}
+
+#atenuador {
+    background-color: rgb(255,255,255, 0.85);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tarjeta {
+    border: 3px solid #379683;
+    border-radius: 27px;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin: 5px;
+    min-height: 400px;
+    color: #05386B;
+    overflow:hidden;
+}
+
+    .tarjeta img {
+        margin: 0;
+        width: 98%;
+        height: 150px;
+        border-top-left-radius: 27px;
+        border-top-right-radius: 27px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        object-fit: cover;
+        margin: 0px auto;
+        margin-top: 1%;
+    }
+
+.tarjeta-texto {
+
+    width: 85%;
+    margin: auto;
+
+}
+
+    .tarjeta-texto h3 {
+        color: rgba(120, 120, 115);
+    }
+
+
+#paisaje-scroll-final {
+    min-height: 500px;
+    width: 100%;
+    background: url('/pics/filip-mroz-zK049OFP4uI-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: 0 20%;
+    background-size: cover;
+}
+
+
+/* ~~~~~~~~~~~~ estilos pagina servicios ~~~~~~~~~~~~~~ */
+
+
+#grupo-tarjetas-servicios {
+    background: white;
+}
+
+
+.tarjeta-servicios-izquierda {
+ 
+    width: 100%;
+    overflow: auto;
+
+}
+
+    .tarjeta-servicios-izquierda img {
+        min-height: 300px;
+        width: 40%;
+        object-fit: cover;
+        float: left;
+    }
+
+
+    .tarjeta-servicios-izquierda .texto-servicios {
+        width: 55%;
+        float: left;
+        margin: 2% 0%;
+        padding-right: 2px;
+    }
+
+        .tarjeta-servicios-izquierda .texto-servicios h3 {
+            text-align: right;
+            color: white;
+            background: #05386B;
+        }
+
+        .tarjeta-servicios-izquierda .texto-servicios p {
+            text-align: left;
+            padding-left: 10%;
+        }
+
+
+        .tarjeta-servicios-izquierda .texto-servicios ul {
+            text-align: left;
+            margin: 4% 0 4% 20%;
+        }
+
+
+.tarjeta-servicios-derecha {
+    
+    width: 100%;
+    overflow: auto;
+}
+
+    .tarjeta-servicios-derecha img {
+        min-height: 300px;
+        width: 40%;
+        object-fit: cover;
+        float: right;
+    }
+
+    .tarjeta-servicios-derecha .texto-servicios {
+        width: 55%;
+        float: right;
+        margin: 2% 0%;
+        padding-left: 2px;
+    }
+
+        .tarjeta-servicios-derecha .texto-servicios h3 {
+            text-align: left;
+            background: #05386B;
+            color: white;
+        }
+
+        .tarjeta-servicios-derecha .texto-servicios p {
+            text-align: left;
+            padding-right: 10%;
+        }
+
+        .tarjeta-servicios-derecha .texto-servicios ul {
+            text-align: left;
+            margin: 4% 0 4% 20%;
+        }
+
+
+.contenido-tarjeta-servicios {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.atenuador-servicios {
+    background-color: rgba(250, 250, 250, 0.90);
+}
+
+#servicio-todo-incluido {
+    background: url('/pics/thomas-tucker-MNtag_eXMKw-unsplash.jpg');
+    background-size: cover;
+}
+
+#servicio-masaje {
+    background: url('/pics/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#servicio-excursion {
+    background: url('/pics/asap-story-OFBiE8QPe-8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* ~~~~~~~~~~~ estilos pagina reservaciones ~~~~~~~~~~ */
+#formulario-reservaciones {
+    background: url('pics/enrique-ortega-miranda-bPzydjePHoA-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+    #formulario-reservaciones .tono-background {
+        background: rgba(0, 0, 0, 0.60);
+    }
+
+
+#segmento-disponibilidad {
+    background-color: #8ee4af;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#segmento-fechas-personas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+}
+
+#botonDisponibilidad {
+    border-radius: 26px;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    background: rgba(248, 244, 29, 0.692);
+    color: black;
+    margin: 5px auto;
+}
+
+#segmento-nombre-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.fila-nombre-email {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.fila-nombre-email-titulo {
+    width: 10%;
+}
+
+.fila-nombre-email input[type=text] {
+    width: 40%;
+    margin: 3px;
+}
+
+#segmento-servicios-comentario-boton {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#segmento-servicios {
+    width: 20%;
+}
+
+#segmento-servicios-checkbox {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#segmento-comentario {
+    width: 40%;
+}
+
+    #segmento-comentario textarea {
+        width: 85%;
+        margin: 0;
+    }
+
+#segmento-boton-enviar-reservacion {
+    height: 200px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonEnviarReservacion {
+    width: 80%;
+    height: 30%;
+}
+
+.formulario select {
+    border-radius: 0px;
+    width: 80%;
+    margin: auto;
+}
+
+#enlaceNuevaDisponibilidad {
+    margin: 7px 0;
+    text-align: center;
+}
+
+#instrucciones-color-reservaciones {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* ~~~~~~~~~~~~ estilos pagina login ~~~~~~~~~~~~ */
+
+
+#formulario-login {
+    background: url('/pics/sergey-gavrilyuk-FscBJqxdLa8-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#mensaje-procesos-login {
+    background: rgba(132, 247, 16, 0.66);
+    color: #0f2167;
+    border-radius: 4px;
+    width: 60%;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+}
+
+#instrucciones-color-login {
+    background: #05386B;
+}
+
+#botonLogin {
+
+    margin-top: 10px;
+
+}
+
+
+/* ~~~~~~~~~~~~ estilos pagina admin ~~~~~~~~~~~~ */
+
+#instrucciones-color-admin {
+    background: #baffcb;
+}
+
+#seccion-tabla-grid-reservaciones {
+    background: #edf5e1;
+    overflow: auto;
+}
+
+#seccion-tabla-grid-servicios {
+    background: #edf5e1;
+    overflow: auto;
+}
+
+
+.tablas-admin {
+    margin: 10px auto;
+}
+
+
+/* ~~~~~~~~~~~ estilos media query ~~~~~~~~~~~ */
+
+@media(max-width: 990px) {
+
+    /*estilos generales: media query */
+    footer #datos-logos, footer #ubicacion, footer #logos, .tarjeta-servicios-izquierda img, .tarjeta-servicios-izquierda .texto-servicios, .tarjeta-servicios-derecha img, .tarjeta-servicios-derecha .texto-servicios {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header a {
+        font-size: 15px;
+    }
+
+    header .pagina-actual a {
+        text-decoration: none;
+    }
+
+    header li {
+        padding: 0 15px;
+    }
+
+    header a {
+        font-size: 15px;
+    }
+
+
+    #logotipo {
+        display: none;
+        margin-left: 2%;
+        height: 50px;
+    }
+
+        #logotipo img {
+            height: 100%;
+        }
+
+    header {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+    }
+
+        header nav {
+            margin-top: 40px;
+        }
+
+    nav {
+        position: fixed;
+        left: -100%;
+        background: rgba(5, 56, 107, 0.98);
+        width: 100%;
+        min-height: 200px;
+    }
+
+    header li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 4px solid var(--red);
+        padding: 10px;
+    }
+
+    header a {
+        color: #edf5e1;
+        text-decoration: none;
+        font-family: "Arial Black", Gadget, sans-serif;
+        font-size: 16px;
+        letter-spacing: 4px;
+        word-spacing: 1.0px;
+    }
+
+    .boton-menu {
+        display: block;
+        margin-top: 5px;
+        margin-right: 10px;
+        font-size: 25px;
+        color: black;
+    }
+
+    header .pagina-actual a {
+        color: #ffe200;
+    }
+
+
+    header #nombre {
+        display: block;
+        margin-left: 1%;
+    }
+
+        header #nombre h1 {
+            margin: auto 0;
+        }
+
+            header #nombre h1 a {
+                font-size: 15px;
+            }
+
+    .pagina-titulo {
+        min-height: 100px;
+        background: white;
+        text-align: center;
+    }
+
+        .pagina-titulo h1 {
+            margin-top: 55px;
+            font-size: 30px;
+            letter-spacing: 1.4px;
+            word-spacing: 3.6px;
+            color: black;
+        }
+
+    footer #ubicacion {
+        background: none;
+        border-radius: 0%;
+    }
+
+    #ubicacion iframe {
+        height: 200px;
+        width: 300px;
+        margin: 1%;
+    }
+
+    /* estilos pagina index: media query */
+
+    #paisaje-scroll-inicio {
+        min-height: 400px;
+    }
+
+        #paisaje-scroll-inicio h1 {
+            font-size: 25px;
+        }
+
+    #paisaje-scroll-inicio {
+        background: url('/pics/sergey-gavrilyuk-FscBJqxdLa8-unsplash.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #paisaje-scroll-inicio-foto {
+        margin-top: 90px;
+        font-size: 40px;
+        color: #e8e225;
+    }
+
+    #mensaje #mensaje-texto {
+        font-size: 20px;
+    }
+
+    #enlace-mensaje-texto {
+        color: yellow;
+    }
+
+
+        #enlace-mensaje-texto:hover {
+            color: none;
+        }
+
+    #paisaje-scroll-inicio img {
+        margin-top: 100px;
+    }
+
+    .tarjeta {
+        float: none;
+        width: 90%;
+        text-align: center;
+        min-height: initial;
+    }
+
+
+    #paisaje-scroll-final {
+        min-height: 300px;
+        background-position: 50% 100%;
+    }
+
+   
+
+    /* estilos pagina servicios: media query */
+
+    .tarjeta-servicios-izquierda .texto-servicios {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tarjeta-servicios-derecha .texto-servicios {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .tarjeta-servicios-izquierda .texto-servicios p {
+        text-align: center;
+        padding: 3%;
+    }
+
+    .tarjeta-servicios-derecha .texto-servicios p {
+        text-align: center;
+        padding: 3%;
+    }
+
+
+
+    /* estilos pagina reservaciones: media query */
+
+    #segmento-disponibilidad {
+        background: rgba(115, 241, 115, 0.397);
+        width: 70%;
+        margin: 10px auto;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #segmento-fechas-personas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .fila-fechas-personas {
+        margin: 3px;
+    }
+
+
+    #segmento-nombre-email {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fila-nombre-email {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .fila-nombre-email-titulo {
+        width: 100%;
+    }
+
+    .fila-nombre-email input[type=text] {
+        width: 70%;
+        margin: auto;
+    }
+
+    #segmento-servicios-comentario-boton {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #segmento-servicios {
+        width: 100%;
+    }
+
+
+    #segmento-servicios-checkbox {
+        min-height: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+
+    #segmento-comentario {
+        width: 100%;
+    }
+
+
+        #segmento-comentario textarea {
+            width: 100%;
+            margin: 0;
+        }
+
+
+
+    #segmento-boton-enviar-reservacion {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: normal;
+    }
+
+    #botonEnviarReservacion {
+        width: 90%;
+        height: 70%;
+        margin: 20px auto;
+        line-height: 0;
+    }
+
+    #seccion-tabla-grid-servicios .contenedor {
+        width: 100%;
+        overflow: auto;
+    }
+}
